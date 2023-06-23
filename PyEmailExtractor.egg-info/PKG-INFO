@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: PyEmailExtractor
+Version: 0.1
+Summary: Tool for extracting emails from pdf and docx files. (Designed especially for resumes)
+Author: Bidut Karki
+Author-email: bidutjava3@gmail.com

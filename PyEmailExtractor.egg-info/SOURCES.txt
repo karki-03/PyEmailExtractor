@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyEmailExtractor/__init__.py
+PyEmailExtractor/driver.py
+PyEmailExtractor/helper.py
+PyEmailExtractor.egg-info/PKG-INFO
+PyEmailExtractor.egg-info/SOURCES.txt
+PyEmailExtractor.egg-info/dependency_links.txt
+PyEmailExtractor.egg-info/requires.txt
+PyEmailExtractor.egg-info/top_level.txt
