@@ -1,4 +1,4 @@
-# PyEmailExtractor
+# PyEmailExtractor [![Downloads](https://static.pepy.tech/badge/pyemailextractor)](https://pepy.tech/project/pyemailextractor)
 
 PyEmailExtractor is a tool designed specifically for extracting emails from PDF and DOCX files, with a focus on resumes. It provides a convenient way to extract email addresses from these document formats, which can be useful for various applications, such as recruitment, data analysis, or contact management.
 
