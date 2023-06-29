@@ -4,6 +4,8 @@ import PyPDF2
 import docx2txt
 from docx import Document
 import fitz
+import pytesseract
+from PIL import Image
 
 
 def fetch_files(directory, file_extensions):
@@ -52,4 +54,21 @@ def extract_email_from_docx(docx_file):
     except Exception as e:
         with open("error_logs.txt", "a") as f:
             f.write("Error from extract_email_from_docx function: \n" + str(e) + "\n")
+    return email
+
+
+def extract_email_from_image(image_file):
+    email_pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
+    email = ""
+    try:
+        image = Image.open(str(image_file))
+
+        text = pytesseract.image_to_string(image)
+        email = re.findall(email_pattern, text)
+        if not email:
+            with open("no_email_logs.txt", "a") as f:
+                f.write(str(image_file) + "\n")
+    except Exception as e:
+        with open("error_logs.txt", "a") as f:
+            f.write("Error from extract_email_from_image function: \n" + str(e) + "\n")
     return email
