@@ -4,8 +4,7 @@ PyEmailExtractor is a tool designed specifically for extracting emails from PDF 
 
 ## Features
 
-- Extract email addresses from PDF files.
-- Extract email addresses from DOCX files.
+- Extract email addresses from PDF, DOCX, PNG, JPG files.
 - Designed specifically for resumes, ensuring accurate email extraction.
 - Simple and easy-to-use.
 
